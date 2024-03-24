@@ -1,4 +1,4 @@
-﻿namespace QuartzJobs
+﻿namespace QuartzJobs.Infrastructure
 {
     public class JobSchedule
     {
@@ -10,7 +10,7 @@
             CronExpression = cronExpression;
         }
 
-   
+
     }
 
 

@@ -2,7 +2,7 @@
 using Quartz;
 using Quartz.Spi;
 
-namespace QuartzJobs
+namespace QuartzJobs.Infrastructure
 {
     public class QuartzHostedService : IHostedService
     {

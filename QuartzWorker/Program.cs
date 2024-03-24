@@ -13,7 +13,7 @@ namespace QuartzWorker
         public static IHostBuilder CreateHostBuilder(string[] args)
         {
             return Host.CreateDefaultBuilder(args).ConfigureServices((hostContext, services) => {
-                Startup.ConfigureServices(services);
+                ConfiguredServices.Configure(services);
             });
         }
     }
