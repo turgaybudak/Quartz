@@ -1,0 +1,7 @@
+sc.exe create "QuartzWorker" binpath="C:\xxxxxxx\QuartzWorker.exe" start= auto
+
+sc.exe start "QuartzWorker"
+
+sc.exe stop "QuartzWorker"
+
+sc.exe delete "QuartzWorker"

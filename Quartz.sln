@@ -7,7 +7,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuartzJobs", "QuartzJobs\Qu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuartzWorker", "QuartzWorker\QuartzWorker.csproj", "{76E755EB-745F-4BBA-B329-4A65903EE6E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuartzConsole", "QuartzConsole\QuartzConsole.csproj", "{A4F8DFE9-B72A-4D66-9A44-31D382A09ED5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuartzConsole", "QuartzConsole\QuartzConsole.csproj", "{A4F8DFE9-B72A-4D66-9A44-31D382A09ED5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A5A549B0-B91A-4273-AE73-E5A4A56FF1C0}"
+	ProjectSection(SolutionItems) = preProject
+		ForWindowsServices.txt = ForWindowsServices.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

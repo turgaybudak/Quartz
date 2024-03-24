@@ -1,8 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
 using Quartz;
-using QuartzJobs;
 
-namespace MFA.X.JobScheduler.Base
+namespace QuartzJobs.JobScheduler.Base
 {
     public abstract class JobBase<TJob, TData> : JobBase where TJob : JobBase<TJob, TData>
     {

@@ -1,4 +1,4 @@
-﻿using MFA.X.JobScheduler.Base;
+﻿using QuartzJobs.JobScheduler.Base;
 using Microsoft.Extensions.Logging;
 
 namespace QuartzJobs
@@ -8,7 +8,6 @@ namespace QuartzJobs
         public HelloWorldJob1( ILogger<HelloWorldJob1> logger) : base(logger)
         {
             RunMode = RunMode.Serial;
-
         }
 
         public override DoWorkResult DoWork(int id)

@@ -1,5 +1,6 @@
-using Microsoft.AspNetCore.Hosting;
+using Quartz.Logging;
 using QuartzJobs;
+using LogLevel = Quartz.Logging.LogLevel;
 
 namespace QuartzWorker
 {
@@ -12,9 +13,14 @@ namespace QuartzWorker
 
         public static IHostBuilder CreateHostBuilder(string[] args)
         {
-            return Host.CreateDefaultBuilder(args).ConfigureServices((hostContext, services) => {
-                ConfiguredServices.Configure(services);
+            return Host.CreateDefaultBuilder(args).UseWindowsService().ConfigureServices((hostContext, services) =>
+            {
+                ConfiguredServices.Configure(hostContext, services);
             });
         }
+
+
+
     }
+
 }

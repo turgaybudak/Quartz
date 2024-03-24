@@ -9,8 +9,6 @@
             JobType = jobType;
             CronExpression = cronExpression;
         }
-
-
     }
 
 

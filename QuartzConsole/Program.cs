@@ -1,5 +1,5 @@
-﻿using QuartzJobs;
-using Microsoft.Extensions.Hosting;
+﻿using Microsoft.Extensions.Hosting;
+using QuartzJobs;
 
 namespace QuartzConsole
 {
@@ -12,8 +12,9 @@ namespace QuartzConsole
 
         public static IHostBuilder CreateHostBuilder(string[] args)
         {
-            return Host.CreateDefaultBuilder(args).ConfigureServices((hostContext, services) => {
-                ConfiguredServices.Configure(services);
+            return Host.CreateDefaultBuilder(args).ConfigureServices((hostContext, services) =>
+            {
+                ConfiguredServices.Configure(hostContext, services);
             });
         }
     }

@@ -1,6 +1,4 @@
-﻿using MFA.X.JobScheduler.Base;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Quartz;
 using Quartz.Impl;
@@ -11,9 +9,9 @@ namespace QuartzJobs
 {
     public static class ConfiguredServices
     {
-        public static void Configure(IServiceCollection services)
+        public static void Configure(HostBuilderContext hostContext, IServiceCollection services)
         {
-            services.AddSingleton<IJobFactory, JobFactory>();
+            services.AddTransient<IJobFactory, JobFactory>();
             services.AddSingleton<ISchedulerFactory, StdSchedulerFactory>();
             services.AddHostedService<QuartzHostedService>();
 

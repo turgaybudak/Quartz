@@ -1,11 +1,6 @@
 ﻿using Quartz;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace MFA.X.JobScheduler.Base
+namespace QuartzJobs.JobScheduler.Base
 {
     public abstract class JobBase : IJob
     {

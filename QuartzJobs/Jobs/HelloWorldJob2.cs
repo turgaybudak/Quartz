@@ -1,32 +1,10 @@
-﻿//using Microsoft.Extensions.Logging;
-//using Quartz;
-
-//namespace QuartzJobs
-//{
-//    public class HelloWorldJob2 : IJob
-//    {
-//        private readonly ILogger<HelloWorldJob2> _logger;
-
-//        public HelloWorldJob2()
-//        {
-
-//        }
-
-//        public Task Execute(IJobExecutionContext context)
-//        {
-//            _logger.LogInformation("Hello HelloWorldJob2!");
-//            return Task.CompletedTask;
-//        }
-//    }
-//}
-using MFA.X.JobScheduler.Base;
+﻿using QuartzJobs.JobScheduler.Base;
 using Microsoft.Extensions.Logging;
 
 namespace QuartzJobs
 {
     public class HelloWorldJob2 : JobBase<HelloWorldJob2, int>
     {
-
         public HelloWorldJob2(ILogger<HelloWorldJob2> logger) : base(logger)
         {
             RunMode = RunMode.Parallel;

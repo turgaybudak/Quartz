@@ -1,6 +1,9 @@
 ﻿using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Options;
 using Quartz;
+using Quartz.Impl;
 using Quartz.Spi;
+using System;
 
 namespace QuartzJobs.Infrastructure
 {
